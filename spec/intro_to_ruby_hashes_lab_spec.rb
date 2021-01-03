@@ -24,7 +24,7 @@ describe "working with hashes" do
     end
 
     describe "id_hash_generator" do
-      it "takes an integer as an argument and returns a hash with a key :id and and the integer as the value" do
+      it "takes an integer as an argument and returns a hash with a key :id and the integer as the value" do
         expect(id_hash_generator(5)).to be_a Hash
         expect(id_hash_generator(5)[:id]).to be_an Integer
         expect(id_hash_generator(5)[:id]).to eq(5)
